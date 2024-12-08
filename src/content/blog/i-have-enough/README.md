@@ -1,7 +1,7 @@
 ---
-title: "Well... I'm mad now."
+title: "The one and only chapter"
 description: "Through all of the disappointments and setbacks, it comes time to make a change."
-date: "Jan 01 2023"
+date: "Nov 01 2024"
 demoURL: "https://example.com"
 repoURL: "https://github.com/keinsell/neuronek"
 ---
