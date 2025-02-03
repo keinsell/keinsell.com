@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://example.com/</id>
+    <title>Your Blog Name</title>
+    <updated>2025-02-03T00:54:45.384Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Your Name Here</name>
+        <email>youremailaddress@example.com</email>
+        <uri>https://example.com/about-me/</uri>
+    </author>
+    <link rel="alternate" href="https://example.com/"/>
+    <link rel="self" href="https://example.com//feed"/>
+    <subtitle>I am writing about my experiences as a naval navel-gazer</subtitle>
+    <rights>Copyright 2025 https://example.com/</rights>
+    <entry>
+        <title type="html"><![CDATA[keinsell.com]]></title>
+        <id>https://example.com/</id>
+        <link href="https://example.com/"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[notes]]></title>
+        <id>https://example.com/notes</id>
+        <link href="https://example.com/notes"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Data Structures]]></title>
+        <id>https://example.com/notes/data-structures</id>
+        <link href="https://example.com/notes/data-structures"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><p>List</p>
+</li>
+<li><p>Vector</p>
+</li>
+<li><p>Stack</p>
+</li>
+<li><p>Queue</p>
+</li>
+<li><p>Hash Array Mapped Trie</p>
+</li>
+<li><p>Hash Trie Map</p>
+</li>
+<li><p>Red-Black Tree</p>
+</li>
+<li><p>Red-Black Tree Set</p>
+</li>
+<li><p>Persistient data structures for <a href="https://github.com/orium/rpds" rel="external noopener noreferrer">rust</a>.</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deepseek V3]]></title>
+        <id>https://example.com/notes/deepseek-v3</id>
+        <link href="https://example.com/notes/deepseek-v3"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<p>#large-language-model</p>
+<p>The architecture of DeepSeek-v3 incorporates innovative techniques like the Mixture of Experts (671B and 37B activated per token), Multi-Head Latent Attention (MLHA), and a pretraining process using 14.8T tokens. The model undergoes Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) to enhance performance. Key architectural improvements include the Load Balancing Strategy (auxiliary-loss-free) and the Multi-Token-Prediction Objective (MTP), which boosts both performance and inference speed. The model employs FP8 mixed precision during pretraining to address communication bottlenecks and integrates reasoning capabilities distilled from DeepSeek R1 series models into DeepSeek-v3.[1]</p>
+<p>[1]: <a href="https://lunar-joke-35b.notion.site/Deepseek-v3-101-169ba4b6a3fa8090a7aacaee1a1cefaa" rel="external noopener noreferrer">Deepseek-v3 101</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenAI o1]]></title>
+        <id>https://example.com/notes/openai-o1</id>
+        <link href="https://example.com/notes/openai-o1"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<p>#large-language-model</p>
+<p>o1 was major advancement from [[gpt-4o]] language model. However, since [[202501]] model was greately outperformed by [[deepseek-v3]] for coding-related tasks (o1 still maintain general lead in other domains) and by the end of january model seems to be completly beaten by [[deepsek-r1]].</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[query-builder]]></title>
+        <id>https://example.com/notes/query-builder</id>
+        <link href="https://example.com/notes/query-builder"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<h2 id="query-builder"><a class="h-anchor" href="#query-builder">#</a>Query Builder</h2><ul>
+<li><a href="https://litdb.dev/" rel="external noopener noreferrer">litdb</a> is #linq inspired type-safe #sql builder for #typescript with support for #sqlite #mysql #postgresql</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Garbage Collectors]]></title>
+        <id>https://example.com/notes/garbage-collector</id>
+        <link href="https://example.com/notes/garbage-collector"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><p>Tracing garbage collectors</p>
+<ul>
+<li>Reachability of an object</li>
+<li>Basic algorithm</li>
+<li>Variants of the basic algorithm<ul>
+<li>Mark and sweep</li>
+<li>Generational GC</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Reference counting</p>
+</li>
+<li><p>[Hardware-Accelerated GC with Near-Memory Processing]</p>
+</li>
+<li><p>Hybrid Write Barrier</p>
+</li>
+<li><p>Concurrent Tri-Color Marking</p>
+</li>
+<li><p>Deterministic resource cleanup (RAII) with cycle-breaking</p>
+</li>
+</ul>
+<p>Here is a comprehensive list of innovative garbage collection (GC) implementations and research advancements from both academic and real-world performance perspectives, prioritizing recent technologies (post-2023) with demonstrated results:</p>
+<hr>
+<h3 id="1.-lessstronggreatergofree:-compiler-inserted-explicit-memory-freeing-(go-language)lessstronggreater"><a class="h-anchor" href="#1.-lessstronggreatergofree:-compiler-inserted-explicit-memory-freeing-(go-language)lessstronggreater">#</a>1. <strong>GoFree: Compiler-Inserted Explicit Memory Freeing (Go Language)</strong></h3><ul>
+<li><strong>Innovation</strong>: Combines escape analysis with compiler-inserted automatic memory freeing to reduce GC overhead. Unlike traditional GC, it explicitly releases memory during compilation without altering the programming model.</li>
+<li><strong>Performance</strong>: <ul>
+<li>Reduces heap memory usage by <strong>14.1%</strong> and GC time by <strong>13.0%</strong> in real-world Go applications.</li>
+<li>Introduces a concurrency-safe freeing primitive for multi-threaded environments.</li>
+</ul>
+</li>
+<li><strong>Academic Contribution</strong>: Accepted at <strong>CGO 2025</strong> (a CCF-B ranked conference), demonstrating scalability with <strong>O(N²)</strong> complexity.</li>
+</ul>
+<hr>
+<h3 id="2.-lessstronggreaterz-garbage-collector-(zgc)-and-shenandoah-gc-(jdk-1721)lessstronggreater"><a class="h-anchor" href="#2.-lessstronggreaterz-garbage-collector-(zgc)-and-shenandoah-gc-(jdk-1721)lessstronggreater">#</a>2. <strong>Z Garbage Collector (ZGC) and Shenandoah GC (JDK 17/21)</strong></h3><ul>
+<li><strong>ZGC Innovations</strong>:<ul>
+<li>Ultra-low pause times (<strong>&lt;10 ms</strong>) even for multi-terabyte heaps (up to <strong>16 TB</strong>).</li>
+<li>Fully concurrent phases, minimizing &quot;Stop-The-World&quot; (STW) interruptions.</li>
+</ul>
+</li>
+<li><strong>Shenandoah GC</strong>:<ul>
+<li>Features heuristic-based tuning (e.g., <code>compact</code> mode for memory compaction) and sub-100 ms pauses.</li>
+<li>Optimized for high-throughput applications with large datasets.</li>
+</ul>
+</li>
+<li><strong>Real-World Impact</strong>: Both are production-ready in JDK 17/21, with tunable parameters (e.g., <code>-XX:MaxGCPauseMillis</code>) for balancing latency and throughput.</li>
+</ul>
+<hr>
+<h3 id="3.-lessstronggreaterhybrid-write-barrier-in-goand39s-gc-(v1.8+)lessstronggreater"><a class="h-anchor" href="#3.-lessstronggreaterhybrid-write-barrier-in-goand39s-gc-(v1.8+)lessstronggreater">#</a>3. <strong>Hybrid Write Barrier in Go&#39;s GC (v1.8+)</strong></h3><ul>
+<li><strong>Innovation</strong>: Combines insertion and deletion write barriers to enable <strong>concurrent marking</strong> while minimizing STW pauses.</li>
+<li><strong>Performance</strong>:<ul>
+<li>Reduced STW time from <strong>hundreds of milliseconds</strong> to sub-millisecond levels in most cases.</li>
+<li>Supports efficient tri-color marking with generational collection strategies.</li>
+</ul>
+</li>
+<li><strong>Adoption</strong>: Widely used in Go applications, including high-performance systems like Kubernetes and Docker.</li>
+</ul>
+<hr>
+<h3 id="4.-lessstronggreaterhardware-accelerated-gc-with-near-memory-processinglessstronggreater"><a class="h-anchor" href="#4.-lessstronggreaterhardware-accelerated-gc-with-near-memory-processinglessstronggreater">#</a>4. <strong>Hardware-Accelerated GC with Near-Memory Processing</strong></h3><ul>
+<li><strong>Research Breakthrough</strong>: Proposes offloading GC tasks to near-memory processing units to reduce CPU overhead.</li>
+<li><strong>Key Benefits</strong>:<ul>
+<li>Reduces memory bandwidth contention by processing GC tasks closer to DRAM.</li>
+<li>Promises <strong>10–20%</strong> performance improvements in latency-sensitive applications.</li>
+</ul>
+</li>
+<li><strong>Status</strong>: Published at <strong>IEEE conferences</strong> (2025), with prototypes demonstrating feasibility for large-scale systems.</li>
+</ul>
+<hr>
+<h3 id="5.-lessstronggreaterconcurrent-cycle-collection-in-reference-counted-systemslessstronggreater"><a class="h-anchor" href="#5.-lessstronggreaterconcurrent-cycle-collection-in-reference-counted-systemslessstronggreater">#</a>5. <strong>Concurrent Cycle Collection in Reference-Counted Systems</strong></h3><ul>
+<li><strong>Innovation</strong>: Addresses cyclic references in non-GC languages (e.g., C++) using reference-counting schemes with cycle detection.</li>
+<li><strong>Academic Insights</strong>:<ul>
+<li>Combines deterministic resource cleanup (RAII) with cycle-breaking algorithms.</li>
+<li>Outperforms traditional GC in scenarios requiring timely resource release (e.g., file handles, locks).</li>
+</ul>
+</li>
+<li><strong>Limitations</strong>: Not yet mainstream due to compatibility challenges with existing C++ conventions.</li>
+</ul>
+<hr>
+<h3 id="6.-lessstronggreatergenerational-gc-with-adaptive-thresholds-(go-and-java)lessstronggreater"><a class="h-anchor" href="#6.-lessstronggreatergenerational-gc-with-adaptive-thresholds-(go-and-java)lessstronggreater">#</a>6. <strong>Generational GC with Adaptive Thresholds (Go and Java)</strong></h3><ul>
+<li><strong>Optimization</strong>: Dynamically adjusts GC thresholds (e.g., <code>GOGC</code> in Go) based on heap occupancy and object lifetimes.</li>
+<li><strong>Results</strong>:<ul>
+<li>Reduces GC frequency by <strong>7.3%</strong> in Go applications.</li>
+<li>Balances memory usage and pause times in Java’s G1 GC through <code>-XX:InitiatingHeapOccupancyPercent</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="7.-lessstronggreaterai-driven-gc-tuninglessstronggreater-(emerging-research)"><a class="h-anchor" href="#7.-lessstronggreaterai-driven-gc-tuninglessstronggreater-(emerging-research)">#</a>7. <strong>AI-Driven GC Tuning</strong> (Emerging Research)</h3><ul>
+<li><strong>Concept</strong>: Uses machine learning to predict optimal GC parameters (e.g., heap sizes, pause targets) based on application behavior.</li>
+<li><strong>Potential</strong>: Early studies (not listed in sources) suggest <strong>15–30%</strong> latency improvements in JVM applications.</li>
+</ul>
+<hr>
+<h3 id="key-trends-in-gc-research:"><a class="h-anchor" href="#key-trends-in-gc-research:">#</a>Key Trends in GC Research:</h3><ol>
+<li><strong>Concurrency and Low Latency</strong>: Focus on minimizing STW pauses (e.g., ZGC, Go’s hybrid barriers).</li>
+<li><strong>Compiler-Cooperative GC</strong>: Tools like GoFree integrate static analysis for proactive memory management .</li>
+<li><strong>Hardware Integration</strong>: Near-memory processing and custom accelerators to offload GC workloads .</li>
+</ol>
+<p>For deeper insights, refer to the cited sources, such as the CGO 2025 paper on GoFree  and JDK 21’s GC tuning guidelines .</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Search Engine]]></title>
+        <id>https://example.com/notes/search-engine</id>
+        <link href="https://example.com/notes/search-engine"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<p>Related: full-text-search lexical-search bm25f faceted-search tie-breaking geo-proximity-search tokenizer kwic simd</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Service Manager]]></title>
+        <id>https://example.com/notes/service-manager</id>
+        <link href="https://example.com/notes/service-manager"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li><code>systemd</code> was unfortunetly used to extend where it&#39;s systemd operating system instead GNU/Linux. Some distributions have adopted <code>s6</code> as service management tool which allows users to choose components instead bundling everything.</li>
+<li>Void linux have come with <code>runit</code> as extremally simple solution.</li>
+<li><code>dinit</code> seems to be modernized dependecy-aware and concurrent service startup, other more modern alternatives land in <code>shepherd</code>.</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Insanity begins here.]]></title>
+        <id>https://example.com/index</id>
+        <link href="https://example.com/index"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tags]]></title>
+        <id>https://example.com/tags</id>
+        <link href="https://example.com/tags"/>
+        <updated>2025-02-03T00:54:45.384Z</updated>
+    </entry>
+</feed>
